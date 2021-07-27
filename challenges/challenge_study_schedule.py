@@ -12,8 +12,3 @@ def study_schedule(permanence_period, target_time):
             period_in += 1
     return period_in
 
-
-# if (__name__ == '__main__'):
-#     permanence_period = [(2, 2), (1, 2), (2, 3), (1, 5), (4, 5), (4, 5)]
-#     target_time1 = 3
-#     print(study_schedule(permanence_period, target_time1))
