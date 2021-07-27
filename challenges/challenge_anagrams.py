@@ -9,7 +9,7 @@ def sort_string(list_string):
 
 
 def is_anagram(first_string, second_string):
-    if first_string != "" or second_string != "": 
+    if first_string != "" or second_string != "":
         list_str1 = sort_string(list(first_string))
         list_str2 = sort_string(list(second_string))
         return(list_str1 == list_str2)
