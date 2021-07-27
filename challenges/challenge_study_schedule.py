@@ -4,7 +4,7 @@ def study_schedule(permanence_period, target_time):
         try:
             if target_time >= aluno[0] and target_time <= aluno[1]:
                 total_time = total_time + 1
-        except:
+        except Exception:
             return None
     return total_time
 

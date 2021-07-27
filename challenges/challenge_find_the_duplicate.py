@@ -5,6 +5,6 @@ def find_duplicate(nums):
                 return False
             if (nums.count(num) != 1):
                 return num
-        except:
-            return False
+        except Exception:
+            pass
     return False
