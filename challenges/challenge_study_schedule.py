@@ -11,4 +11,3 @@ def study_schedule(permanence_period, target_time):
              (target_time <= permanence_period[index][1])):
             period_in += 1
     return period_in
-
