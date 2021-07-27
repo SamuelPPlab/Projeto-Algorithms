@@ -10,7 +10,7 @@ def is_palindrome_recursive(word, low_index, high_index):
 
     if (word[low_index] != word[high_index]):
         # comparamos se as letras na posição do low_index e do high_index
-        # são diferentes. Caso sejam é retornado False, pois não é um 
+        # são diferentes. Caso sejam é retornado False, pois não é um
         # palindromo.
         return False
 
