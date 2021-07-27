@@ -10,18 +10,7 @@ def test_validar_melhor_horario_com_sucesso():
     assert study_schedule(permanence_periods, 2) == 4
     assert study_schedule(permanence_periods, 1) == 2
 
-
-def test_validar_melhor_horario_quando_target_empata_com_maior_saida():
-    permanence_periods = [(0, 2), (4, 4), (1, 3), (3, 4), (2, 5)]
-    assert study_schedule(permanence_periods, 5) == 1
-    assert study_schedule(permanence_periods, 4) == 3
-    assert study_schedule(permanence_periods, 3) == 3
-    assert study_schedule(permanence_periods, 2) == 3
-    assert study_schedule(permanence_periods, 1) == 2
-    assert study_schedule(permanence_periods, 0) == 1
-
-
-def test_validar_permanence_periods_com_entradas_inválidas():
+def test_validar_permanence_periods_com_entradas_invalidas():
     permanence_periods = [(4, None), ("0", 4)]
     target_time = 4
     assert study_schedule(permanence_periods, target_time) is None
