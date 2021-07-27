@@ -1,9 +1,14 @@
-def study_schedule(start_time, end_time, target_time):
-    if not start_time or not target_time:
-        return 0
+from typing import Type
+
+
+def study_schedule(permanence_period, target_time):
+    if not target_time:
+        return None
     online_students = 0
-    for index in range(len(start_time)):
-        if start_time[index] <= target_time <= end_time[index]:
+    for period in permanence_period:
+        if type(period[0]) != int or type(period[1]) != int:
+            return None
+        if period[0] <= target_time <= period[1]:
             online_students += 1
 
     return online_students
