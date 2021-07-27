@@ -10,7 +10,6 @@ def study_schedule(permanence_period, target_time):
         if (
             not isinstance(permanence_period[index][0], int) or
             not isinstance(permanence_period[index][1], int)
-            # not all(isinstance(value, int) for value in permanence_period[index]) or
         ):
             return None
 
