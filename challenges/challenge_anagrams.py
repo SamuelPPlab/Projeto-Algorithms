@@ -6,7 +6,6 @@ def sort_string(list_string):
             index -= 1
         list_string[index] = current_char
     return list_string
-    
 
 
 def is_anagram(first_string, second_string):
