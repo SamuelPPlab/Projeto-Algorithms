@@ -7,7 +7,7 @@ def is_palindrome_recursive(word, low_index, high_index):
         return True
     elif word[low_index] == word[high_index]:
         return True and is_palindrome_recursive(
-            word[1:-1], 0, len(word[1:-1]) -1
+            word[1:-1], 0, len (word[1:-1]) -1
         )
     else:
         return False
