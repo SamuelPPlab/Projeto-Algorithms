@@ -1,1 +1,0 @@
-print(study_schedule('', 1))
