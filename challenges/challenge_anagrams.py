@@ -5,8 +5,6 @@ def is_anagram(first_string, second_string):
         return False
     first_word = list(first_string)
     second_word = list(second_string)
-    print(first_word)
-    print(second_word)
     if (len(first_word) != len(second_word)):
         return False
 
@@ -96,8 +94,3 @@ def partition(array, low, high):
     array[i + 1], array[high] = array[high], array[i + 1]
 
     return i + 1
-
-
-is_anagram("pedrra", "pedraa")
-if __name__ == "__main__":
-    is_anagram("pedrra", "pedraa")
