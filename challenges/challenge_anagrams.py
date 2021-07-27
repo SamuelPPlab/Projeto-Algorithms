@@ -2,7 +2,7 @@
 # https://stackoverflow.com/questions/3855537/fastest-way-to-sort-in-python
 
 def quick_sort(inlist):
-    if inlist == []: 
+    if inlist == []:
         return []
     else:
         pivot = inlist[0]

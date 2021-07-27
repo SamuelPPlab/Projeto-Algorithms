@@ -14,7 +14,8 @@ def study_schedule(permanence_period, target_time):
             return None
 
         if (
-            permanence_period[index][0] <= target_time <= permanence_period[index][1]
+            permanence_period[index][0] <=
+            target_time <= permanence_period[index][1]
         ):
             cont += 1
 
