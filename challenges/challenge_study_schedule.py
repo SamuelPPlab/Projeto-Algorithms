@@ -1,8 +1,13 @@
-def study_schedule(start_time, end_time, target_time):
-    if not target_time or not start_time or not end_time:
-        return 0
+def study_schedule(permanence_period, target_time):
     counter = 0
-    for i in range(len(start_time)):
-        if start_time[i] <= target_time and end_time[i] >= target_time:
-            counter += 1
+    for i in range(len(permanence_period)):
+        try:
+            if (
+                permanence_period[i][0] <= target_time
+                and permanence_period[i][1] >= target_time
+            ):
+                counter += 1
+        except TypeError:
+            return None
+
     return counter
