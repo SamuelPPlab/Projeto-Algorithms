@@ -7,5 +7,3 @@ def study_schedule(permanence_period, target_time):
         except Exception:
             return None
     return total_time
-
-# print(study_schedule([(2, 2), (1, 2), ("batata", 3), (1, 5), (4, 5), (4, 5)],3))
