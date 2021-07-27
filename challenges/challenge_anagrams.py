@@ -24,9 +24,3 @@ def insertionSort(arr):
             j -= 1
         arr[j + 1] = key
     return arr
-
-
-if __name__ == "__main__":
-    first_string = "pedra"
-    second_string = "perdaaa"
-    print(is_anagram(first_string, second_string))
