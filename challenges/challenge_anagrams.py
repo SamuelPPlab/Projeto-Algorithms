@@ -76,6 +76,6 @@ def is_anagram(first_string, second_string):
     # return list_first_string, list_second_string
 
 
-# first_string = "ROMA"
-# second_string = "AMOR"
+# first_string = "FERNANDO"
+# second_string = "FERNANDA"
 # print(is_anagram(first_string, second_string))
