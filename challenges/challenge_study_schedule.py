@@ -8,11 +8,7 @@ def verifica(period):
 def total_list_range(permanence_period):
     total_list = []
     for tuple_time in permanence_period:
-        start = tuple_time[0]
-        end = tuple_time[1] + 1
-        range_time = range(start, end)
-        list_time = list(range_time)
-        total_list += list_time
+        total_list += list(range(tuple_time[0], tuple_time[1] + 1))
     return total_list
 
 
