@@ -11,4 +11,5 @@ def study_schedule(permanence_period, target_time):
         if student[0] <= target_time <= student[1]:
             times += 1        
 
+
     return times
