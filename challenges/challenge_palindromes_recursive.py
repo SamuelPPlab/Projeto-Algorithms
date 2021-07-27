@@ -9,4 +9,3 @@ def reverse(list):
         return list
     else:
         return reverse(list[1:]) + list[0]
-
