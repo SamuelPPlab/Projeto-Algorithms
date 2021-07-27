@@ -1,11 +1,9 @@
 def study_schedule(permanence_period, target_time):
     try:
         total_list = []
-        if not isinstance(target_time, int):
-            return None
-
         for period in permanence_period:
-            total_list += list(range(period[0], period[1] + 1))
+            if target_time >= 0:
+                total_list += list(range(period[0], period[1] + 1))
     except TypeError:
         return None
     return total_list.count(target_time)
