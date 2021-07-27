@@ -1,2 +1,6 @@
 def find_duplicate(nums):
-    """ Faça o código aqui. """
+    order = sorted(nums)
+    for item in range(len(order)-1):
+        if order[item] == order[item+1]:
+            return order[item]
+    return False

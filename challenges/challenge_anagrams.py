@@ -1,2 +1,4 @@
 def is_anagram(first_string, second_string):
-    """ Faça o código aqui. """
+    return ''.join(sorted(list(first_string))) == \
+      ''.join(sorted(list(second_string)))
+
