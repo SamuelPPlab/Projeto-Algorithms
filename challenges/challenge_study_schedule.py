@@ -1,18 +1,14 @@
 def study_schedule(permanence_period, target_time):
+    if target_time is None:
+        return None
     contador = 0
     for estudante in permanence_period:
-        start_time = estudante[0] or 0
+        start_time = estudante[0]
         end_time = estudante[1]
-        if (
-            isinstance(start_time, int)
-            and isinstance(end_time, int)
-            and target_time is not None
-        ):
-            for hora in range(start_time, end_time + 1):
-                if hora == target_time:
-                    contador += 1
-        else:
+        if type(start_time) != type(end_time) != "int":
             return None
+        elif target_time >= start_time and target_time <= end_time:
+            contador += 1
 
     return contador
 
