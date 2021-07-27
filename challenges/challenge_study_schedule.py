@@ -2,7 +2,9 @@ def study_schedule(permanence_period, target_time):
     number_students_in_interval = 0
 
     for start, end in permanence_period:
-        if not (isinstance(start, int) and isinstance(end, int) and isinstance(target_time, int)):
+        if not (isinstance(start, int)
+                and isinstance(end, int)
+                and isinstance(target_time, int)):
             return None
 
         if start <= target_time <= end:
