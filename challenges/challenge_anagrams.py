@@ -10,7 +10,7 @@ def is_anagram(first_string, second_string):
 
     first_order = ordenador(list_first_string)
     second_order = ordenador(list_second_string)
-    
+
     if first_order == second_order:
         return True
 
