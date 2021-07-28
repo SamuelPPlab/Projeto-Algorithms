@@ -1,12 +1,12 @@
 def study_schedule(permanence_period, target_time):
-    """ Faça o código aqui. """
+    # https://www.w3schools.com/python/ref_func_isinstance.asp
 
     result = 0
     if target_time is None:
         return None
-    for i in permanence_period:
-        if not isinstance(i[0], int) or not isinstance(i[1], int):
+    for periodo in permanence_period:
+        if not isinstance(periodo[0], int) or not isinstance(periodo[1], int):
             return None
-        elif target_time >= i[0] and target_time <= i[1]:
+        elif target_time >= periodo[0] and target_time <= periodo[1]:
             result += 1
     return result
