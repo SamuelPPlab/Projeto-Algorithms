@@ -2,12 +2,13 @@
 # /algoritmos-python/pesquisa-ordenacao/quicksort/
 
 
-def QuickSort(word):
-    if len(word) == 0:
-        return word
-    pivot = word[0]
-    front = QuickSort([smaller for smaller in word[1:] if smaller <= pivot])
-    behind = QuickSort([larger for larger in word[1:] if larger > pivot])
+def QuickSort(entry_list):
+    if len(entry_list) == 0:
+        return entry_list
+    pivot = entry_list[0]
+    front = QuickSort(
+        [smaller for smaller in entry_list[1:] if smaller <= pivot])
+    behind = QuickSort([larger for larger in entry_list[1:] if larger > pivot])
     return front + [pivot] + behind
 
 
