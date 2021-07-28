@@ -29,11 +29,14 @@ def merge_sort(array):
 def is_anagram(first_string, second_string):
     list_first_word, list_second_word = list(first_string), list(second_string)
 
-    list_sort_second_word = merge_sort(list_second_word)
-    sort_second_word = "".join(list_sort_second_word)
+    list_sort_first_word, list_sort_second_word = (
+        merge_sort(list_first_word),
+        merge_sort(list_second_word),
+    )
 
-    list_sort_first_word = merge_sort(list_first_word)
-    sort_first_word = "".join(list_sort_first_word)
+    sort_first_word, sort_second_word = "".join(list_sort_first_word), "".join(
+        list_sort_second_word
+    )
 
     if sort_first_word == sort_second_word:
         return True
