@@ -11,6 +11,6 @@ def removeCharacters(string, characters):
 def is_anagram(first_string, second_string):
     string_final = removeCharacters(first_string, second_string)
     print(string_final)
-    if string_final != None and len(string_final) == 0:
+    if string_final is not None and len(string_final) == 0:
         return True
     return False
