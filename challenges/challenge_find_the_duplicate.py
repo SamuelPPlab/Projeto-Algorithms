@@ -1,8 +1,12 @@
+# from collections import Counter
+
+class CountException(Exception):
+    pass
+
+
 def count_nums(list_nums, initial_index, last_index):
-    if list_nums[last_index]["n"] < 0:
-        raise ValueError
-    elif len(list_nums) < 2:
-        return False
+    if list_nums[last_index]["n"] < 0 or len(list_nums) < 2:
+        raise CountException
     elif last_index == -1:
         return list_nums
     else:
@@ -35,6 +39,9 @@ def higher_num(list_nums):
 
 def find_duplicate(nums):
     try:
+        if nums == []:
+            return False
+
         list_nums = [{"n": int(n), "count": 0} for n in nums]
         length = len(nums)
 
@@ -42,7 +49,7 @@ def find_duplicate(nums):
             list_nums = count_nums(list_nums, n, length - 1)
 
         return higher_num(list_nums)
-    except Exception:
+    except (ValueError, CountException):
         return False
 
 
@@ -57,19 +64,19 @@ if __name__ == "__main__":
 
     nums = [1, 2, 2, 1]
     print(find_duplicate(nums))
-    # saída: False
+    saída: False
 
     nums = [3, 1, 3, 4, 2]
     print(find_duplicate(nums))
-    # # saída: 3
+    # saída: 3
 
     nums = [1]
     print(find_duplicate(nums))
-    # # saída: 1
+    # saída: 1
 
     nums = [1, 1, 2]
     print(find_duplicate(nums))
-    # # saída: 1
+    # saída: 1
 
     nums = [3, 1, 2, 4, 6, 5, 7, 7, 7, 8]
     print(find_duplicate(nums))
