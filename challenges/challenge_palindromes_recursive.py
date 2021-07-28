@@ -8,5 +8,3 @@ def is_palindrome_recursive(word, low_index=0, high_index=0):
         print("returning true")
         return True
     is_palindrome_recursive(word[1:-1])
-
-is_palindrome_recursive("SOCOS")
