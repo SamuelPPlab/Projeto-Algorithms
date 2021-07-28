@@ -5,6 +5,8 @@ def is_palindrome_recursive(word, low_index, high_index):
     if len(word) == 1:
         return True
     else:
+        print(word[(len(word) - 1)])
+        print(word[-1])
         return word[low_index] == word[-1] and is_palindrome_recursive(
             word[1:-1], low_index, (len(word) - 1)
         )
