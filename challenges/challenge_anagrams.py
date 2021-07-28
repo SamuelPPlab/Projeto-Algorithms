@@ -10,6 +10,7 @@ def selection_sort(string):
 
     return string
 
+
 def is_anagram(first_string, second_string):
     first_result = selection_sort(list(first_string))
     second_result = selection_sort(list(second_string))
