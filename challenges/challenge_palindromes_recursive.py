@@ -1,11 +1,8 @@
 def is_palindrome_recursive(word, low_index, high_index):
     if not word:
         return False
-    return word == reverse(word)
-
-
-def reverse(list):
-    if len(list) < 2:
-        return list
+    elif word[0] != word[-1]:
+        return False
     else:
-        return reverse(list[1:]) + list[0]
+        len(word) < 2
+        return is_palindrome_recursive(word[1:-1])
