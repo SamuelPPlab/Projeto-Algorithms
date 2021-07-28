@@ -27,14 +27,12 @@ def is_anagram(first_string, second_string):
 #     second_string = "roma"
 #     result = is_anagram(first_string, second_string)
 #     print(result)
-#     # Explicação: Nesse caso o retorno da função é True, pois a palavra "roma" é um anagrama de "amor".
-
+#
 #     first_string = "pedra"
 #     second_string = "perda"
 #     result = is_anagram(first_string, second_string)
 #     print(result)
-#     # Explicação: Nesse caso o retorno também é True. Na palavra "pedra", trocamos o "d" de lugar com o "r" e formamos "perda", sendo assim um anagrama.
-
+#
 #     first_string = "pato"
 #     second_string = "tapo"
 #     result = is_anagram(first_string, second_string)
