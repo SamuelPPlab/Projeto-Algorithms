@@ -14,6 +14,3 @@ def find_duplicate(nums):
         ocureences[num] = 1
 
     return results
-
-
-print(find_duplicate([-1, 2, 2, 1, 3]))
