@@ -1,2 +1,19 @@
 def find_duplicate(nums):
-    """ Faça o código aqui. """
+
+    ocureences = dict()
+    results = False
+
+    for num in nums:
+        if not isinstance(num, int) or num < 0:
+            results = False
+            break
+        elif bool(ocureences.get(num, 0)):
+            results = num
+            break
+
+        ocureences[num] = 1
+
+    return results
+
+
+print(find_duplicate([-1, 2, 2, 1, 3]))
