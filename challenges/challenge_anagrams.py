@@ -1,8 +1,8 @@
 def is_anagram(first_string, second_string):
     if len(first_string) == 0 or len(second_string) == 0:
         return False
-    first_word = brak_word(first_string)
-    second_word = brak_word(second_string)
+    first_word = break_word(first_string)
+    second_word = break_word(second_string)
     insertion_sort(first_word)
     insertion_sort(second_word)
     if first_word == second_word:
@@ -10,7 +10,7 @@ def is_anagram(first_string, second_string):
     return False
 
 
-def brak_word(word):
+def break_word(word):
     empty_array = []
     for letter in word:
         empty_array.append(letter)
