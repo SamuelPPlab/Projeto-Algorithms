@@ -8,7 +8,7 @@ def study_schedule(permanence_period, target_time):
         if None in p_period:
             return None
         inicial_hour = p_period[0]
-        end_hour = p_period[1]        
+        end_hour = p_period[1]
         if (inicial_hour <= target_time <= end_hour):
             counter += 1
     return counter
