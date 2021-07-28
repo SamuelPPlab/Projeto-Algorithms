@@ -4,6 +4,7 @@ def isValid(array):
     else:
         return True
 
+
 def find_duplicate(nums):
     """ Faça o código aqui. """
     if len(nums) >= 2 and isValid(nums):
@@ -18,5 +19,3 @@ def find_duplicate(nums):
             return False
     else:
         return False
-
-# find_duplicate(['1', -2, 3])
