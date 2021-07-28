@@ -7,7 +7,7 @@ def is_anagram(first_string, second_string):
         return False
     for index in range(len(first_string)):
         if (first_count[index] != second_count[index]):
-                return False
+            return False
     return True
 
 
