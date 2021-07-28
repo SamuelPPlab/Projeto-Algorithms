@@ -1,5 +1,17 @@
+def selection_sort(array):
+    for i in range(len(array)):
+        minimum = i
+
+        for j in range(i + 1, len(array)):
+            if array[j] < array[minimum]:
+                minimum = j
+
+        array[minimum], array[i] = array[i], array[minimum]
+
+    return array
+
 def is_anagram(first_string, second_string):
-    if sorted(first_string) == sorted(second_string):
-        return True
-    else:
-        return False
+    first_result = selection_sort(list(first_string))
+    second_result = selection_sort(list(second_string))
+
+    return first_result == second_result
