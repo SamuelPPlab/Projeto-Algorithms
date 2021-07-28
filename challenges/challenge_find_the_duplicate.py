@@ -26,10 +26,3 @@ def binary_search_boolean(array, low_index, high_index, value):
         return binary_search_boolean(
             array, middle_index + 1, high_index, value
         )
-
-
-array = [2, 3, 4, 10, 40]
-target = 10
-
-result = binary_search_boolean(array, 0, len(array) - 1, target)
-print(f"Elemento encontrado na posição: {result}")
