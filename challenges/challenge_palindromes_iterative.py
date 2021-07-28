@@ -1,4 +1,6 @@
-""" Tentei a solução abaixo, como estava com problema no avaliador (localmente passando), tentei outra. """
+""" Tentei a solução abaixo, como estava com problema no avaliador
+(localmente passando), tentei outra. """
+
 """ def is_palindrome_iterative(word):
     if not word:
         return False
