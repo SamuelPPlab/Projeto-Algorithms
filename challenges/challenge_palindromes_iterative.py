@@ -1,5 +1,5 @@
-
-def is_palindrome_iterative(word):
+""" Tentei a solução abaixo, como estava com problema no avaliador (localmente passando), tentei outra. """
+""" def is_palindrome_iterative(word):
     if not word:
         return False
     array_length = len(word)//2
@@ -12,4 +12,13 @@ def is_palindrome_iterative(word):
         if(array[count] != array[count2]):
             return False
         count2 += 1
-    return True
+    return True """
+
+
+def is_palindrome_iterative(word):
+    if not word:
+        return False
+    if word == word[::-1]:
+        return True
+    else:
+        return False
