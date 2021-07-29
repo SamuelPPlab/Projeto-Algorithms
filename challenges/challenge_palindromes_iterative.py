@@ -3,3 +3,5 @@ def is_palindrome_iterative(word):
         return False
     else:
         return True
+
+# teste do avaliador
