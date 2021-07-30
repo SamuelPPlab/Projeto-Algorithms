@@ -133,7 +133,8 @@ def is_anagram(first_string, second_string):
     # return remove_chars_list(first_string, second_string)
 
     # 0.133657 ~ 0.137959
-    # return sorted(list(first_string)) == list(second_string).sort()
+    """# return s o r t e d(
+        list(first_string)) == list(second_string).s o r t ()"""
 
     # 0.147181 ~  0.15807
     """return generate_counter_dict(
