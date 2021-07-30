@@ -9,3 +9,4 @@ def study_schedule(permanence_period, target_time):
         if initial <= target_time <= final:
             active_students += 1
     return active_students
+    
