@@ -1,10 +1,43 @@
 def is_anagram(first_string, second_string):
-    for item in first_string:
-        lista = [letter == item for letter in second_string]
-    if (
-        len(lista) == len(first_string)
-        and first_string != ""
-        and second_string != ""
-    ):
-        return True
-    return False
+    # esse requisito foi feito com ajuda de Luciano Berchon e Thadeu castelo
+    if len(first_string) != len(second_string):
+        return False
+    elif first_string == "" or second_string == "":
+        return False
+    sorted_first_string = quicksort(
+        list(first_string), 0, len(first_string) - 1
+    )
+    sorted_second_string = quicksort(
+        list(second_string), 0, len(second_string) - 1
+    )
+    for index in range(len(first_string)):
+        if sorted_first_string[index] != sorted_second_string[index]:
+            return False
+    return True
+
+
+def quicksort(array, low, high):
+    if len(array) == 1:
+        return array
+
+    if low < high:
+        partition_index = order(array, low, high)
+
+        quicksort(array, low, partition_index - 1)
+        quicksort(array, partition_index + 1, high)
+
+    return array
+
+
+def order(array, low, high):
+    i = low - 1
+    pivot = array[high]
+
+    for j in range(low, high):
+        if array[j] <= pivot:
+            i = i + 1
+            array[i], array[j] = array[j], array[i]
+
+    array[i + 1], array[high] = array[high], array[i + 1]
+
+    return i + 1
