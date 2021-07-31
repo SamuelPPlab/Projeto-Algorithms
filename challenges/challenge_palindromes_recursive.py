@@ -8,6 +8,3 @@ def is_palindrome_recursive(word, low_index=0, high_index=0):
         else:
             return is_palindrome_recursive(next_word)
     return False
-
-
-print(is_palindrome_recursive('aioia', 0, 1))
