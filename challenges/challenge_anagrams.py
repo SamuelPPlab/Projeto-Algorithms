@@ -5,6 +5,7 @@ def is_anagram(first_string, second_string):
         return False
     return sort(list(first_string)) == sort(list(second_string))
 
+
 def sort(list):
     if len(list) <= 1:
         return list
@@ -27,4 +28,3 @@ def merge(left, right, merged):
     for right_cursor in range(right_cursor, len(right)):
         merged[left_cursor + right_cursor] = right[right_cursor]
     return merged
-    
