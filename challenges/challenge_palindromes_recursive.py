@@ -10,6 +10,6 @@ def is_palindrome_recursive(word, low_index, high_index):
         return False
 
 
-if __name__ == "__main__":
-    word = "SSNSS"
-    print(is_palindrome_recursive(word, 0, len(word) - 1))
+# if __name__ == "__main__":
+#     word = "SSNSS"
+#     print(is_palindrome_recursive(word, 0, len(word) - 1))
