@@ -1,6 +1,7 @@
 def is_anagram(first_string, second_string):
     return bubble_sort(first_string) == bubble_sort(second_string)
 
+
 # REF: https://app.betrybe.com/course/computer-science/algoritmos-e-estrutura-de-dados/algoritmos-de-ordenacao-e-busca/29521083-44ea-488d-a74d-216b1ac79b04/conteudos/32a9d9fa-341d-4bdb-af65-eedc37a6082e/algoritmos-de-ordenacao/28628db5-3bd5-4561-aa1d-53b51818494f?use_case=side_bar
 def bubble_sort(array):
     array = list(array)
@@ -26,5 +27,5 @@ def bubble_sort(array):
                 # marca que tivemos trocas nesta iteração
                 has_swapped = True
         num_of_iterations += 1
-    array = ''.join(array)
+    array = "".join(array)
     return array
