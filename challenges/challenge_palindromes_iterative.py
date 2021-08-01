@@ -1,2 +1,8 @@
+from helpers.Number import MINUS_ONE
+
+
 def is_palindrome_iterative(word):
-    """ Faça o código aqui. """
+    if word == "":
+        return False
+
+    return word == word[::MINUS_ONE]
