@@ -5,9 +5,11 @@ def is_anagram(first_string, second_string):
     letters_first = first_string
     letters_second = second_string
 
-    for letter in first_string:
-        letters_first = letters_first.replace(letter, "")
-        letters_second = letters_second.replace(letter, "")
+    while len(letters_first) != 0:
+        char = letters_first[0]
+
+        letters_first = letters_first.replace(char, "")
+        letters_second = letters_second.replace(char, "")
 
         if len(letters_first) != len(letters_second):
             return False
