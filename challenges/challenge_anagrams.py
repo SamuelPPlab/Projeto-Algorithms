@@ -6,12 +6,12 @@ def is_anagram(first_string, second_string):
     return sort(list(first_string)) == sort(list(second_string))
 
 
-def sort(list):
-    if len(list) <= 1:
-        return list
-    mid = len(list) // 2
-    left, right = sort(list[:mid]), sort(list[mid:])
-    return merge(left, right, list.copy())
+def sort(string_list):
+    if len(string_list) <= 1:
+        return string_list
+    mid = len(string_list) // 2
+    left, right = sort(string_list[:mid]), sort(string_list[mid:])
+    return merge(left, right, string_list.copy())
 
 
 def merge(left, right, merged):
