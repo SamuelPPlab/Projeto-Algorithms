@@ -15,5 +15,6 @@ def sort_this_string(string):
 
 def is_anagram(first_string, second_string):
     if(len(first_string) < 1
-        or len(second_string) < 1): return False
+        or len(second_string) < 1):
+        return False
     return sort_this_string(first_string) == sort_this_string(second_string)
