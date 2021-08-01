@@ -10,7 +10,6 @@ def is_palindrome_recursive(word, low_index, high_index):
             return True
         else:
             return is_palindrome_recursive(word, low_index + 1, high_index - 1)
-    else: 
+    else:
         return False
 
-print(is_palindrome_recursive("socos", 0, 4))
