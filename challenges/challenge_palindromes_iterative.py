@@ -3,10 +3,7 @@ def is_palindrome_iterative(word):
         return True
     if not word:
         return False
-    reversed_list = []
-    for item in list(word):
-        reversed_list.insert(0, item)
-    if word == ''.join(reversed_list):
+    if word == ''.join(list(word)[::-1]):
         return True
     else:
         return False
