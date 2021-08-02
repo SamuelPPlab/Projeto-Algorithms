@@ -4,10 +4,10 @@ def study_schedule(permanence_period, target_time):
     if target_time is None:
         return None
 
-    for student_time in permanence_period:
-        if type(student_time[0]) != int or type(student_time[1]) != int:
+    for start_time, end_time in permanence_period:
+        if type(start_time) != int or type(end_time) != int:
             return None
-        if target_time >= student_time[0] and target_time <= student_time[1]:
+        if start_time <= target_time <= end_time:
             counter += 1
 
     return counter
