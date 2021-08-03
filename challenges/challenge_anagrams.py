@@ -1,12 +1,16 @@
 def is_anagram(first_string, second_string):
-    if not first_string or not second_string or len(first_string) != len(second_string):
+    if (
+        not first_string
+        or not second_string
+        or len(first_string) != len(second_string)
+    ):
         return False
     else:
-       first_string = list(first_string.lower())
-       second_string = list(second_string.lower())
-       for letra in first_string:
+        first_string = list(first_string.lower())
+        second_string = list(second_string.lower())
+        for letra in first_string:
             if letra not in second_string:
-               return False
+                return False
             second_string.remove(letra)
     return True
 
