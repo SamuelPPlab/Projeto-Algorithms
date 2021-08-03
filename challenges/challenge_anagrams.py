@@ -1,8 +1,10 @@
 def is_anagram(first_string, second_string):
-    if(len(first_string) != len(second_string)):
+    if (first_string == ""
+            or second_string == ""
+            or len(first_string) != len(second_string)):
+
         return False
-    if first_string == "" or second_string == "":
-        return False
+
     counter = 0
     second_string_array = list(second_string)
     for i in range(len(first_string)):
