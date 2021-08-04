@@ -25,5 +25,5 @@ def study_schedule(permanence_period, target_time):
 # https://www.kite.com/python/answers/how-to-check-for-duplicates-in-a-list-in-python
 # https://thispointer.com/python-3-ways-to-check-if-there-are-duplicates-in-a-list/
 # http://pythontutor.com/visualize.html#mode=edit
-# complexidade assintótica 
+# complexidade assintótica
 # 36 - algoritimo de ordenacao busca
