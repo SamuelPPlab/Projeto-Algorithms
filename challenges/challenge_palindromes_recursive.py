@@ -1,4 +1,5 @@
 def is_palindrome_recursive(word, low_index, high_index):
+    # ref shorturl.at/gnBI2 // StackOverflow shortened url
     if len(word) == 0:
         return False
     if len(word) <= 1:
