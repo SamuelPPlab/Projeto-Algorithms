@@ -1,11 +1,8 @@
 def study_schedule(start_time, end_time, target_time):
-    counter = 0
-
-    if not target_time:
+    if len(start_time) + len(end_time) + target_time == 0:
         return 0
-
-    for start_time_inter, stop_time_iter in zip(start_time, end_time):
-        if start_time_inter <= target_time <= stop_time_iter:
-            counter += 1
-
-    return counter
+    student_counter = 0
+    for student in range(len(start_time)):
+        if end_time[student] >= target_time >= start_time[student]:
+            student_counter += 1
+    return student_counter

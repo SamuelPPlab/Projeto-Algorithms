@@ -1,2 +1,4 @@
 def find_duplicate(nums):
-    """ Faça o código aqui. """
+    if not nums:
+        return False
+    return max(nums, key=nums.count)
