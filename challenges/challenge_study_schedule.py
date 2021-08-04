@@ -1,6 +1,10 @@
-def study_schedule(start_time, end_time, target_time):
-    result = 0
-    for x1, x2 in zip(start_time, end_time):
-        if target_time >= x1 and target_time <= x2:
-            result += 1
-    return result
+def study_schedule(permanence_period, target_time):
+    counter = 0
+    if target_time is None:
+        return None
+    for i in permanence_period:
+        if(i[0] is None or i[1] is None):
+            return None
+        if(target_time >= i[0] and target_time <= i[1]):
+            counter += 1
+    return counter
