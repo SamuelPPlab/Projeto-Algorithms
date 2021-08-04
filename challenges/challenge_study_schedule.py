@@ -1,7 +1,7 @@
 def study_schedule(permanence_period, target_time):
     # if not target_time:
     #     return None
-    # # permanence é um {(1,3), (3, 4), (entrada, saída)}
+    # # permanence_period é um [entrada, saída), (entrada, saída)]
     counter = 0
     try:
         for login, logout in permanence_period:
