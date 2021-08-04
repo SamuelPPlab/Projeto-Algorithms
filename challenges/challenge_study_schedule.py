@@ -1,8 +1,10 @@
-def study_schedule(start_time, end_time, target_time):
-    if len(start_time) + len(end_time) + target_time == 0:
-        return 0
-    student_counter = 0
-    for student in range(len(start_time)):
-        if end_time[student] >= target_time >= start_time[student]:
-            student_counter += 1
-    return student_counter
+def study_schedule(permanence_periods, target_time):
+    """Faça o código aqui."""
+    students = 0
+    try:
+        for period in permanence_periods:
+            if period[0] <= target_time <= period[1]:
+                students += 1
+    except TypeError:
+        return None
+    return students
