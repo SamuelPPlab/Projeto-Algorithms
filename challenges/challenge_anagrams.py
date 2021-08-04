@@ -6,6 +6,10 @@ def is_anagram(first_string, second_string):
         for e in second_string:
             if i == e:
                 flaw += i
+    return isTrue(flaw, first_string)
+
+
+def isTrue(flaw, first_string):
     if flaw == first_string:
         return True
     return False
