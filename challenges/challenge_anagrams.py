@@ -17,17 +17,17 @@ def partition(array, low, high):
 
     for j in range(low, high):
         if array[j] <= pivot:
-            indexPosition = indexPosition + 1
-            array[indexPosition], array[j] = array[j], array[indexPosition]
+            index = index + 1
+            array[index], array[j] = array[j], array[index]
 
-    array[indexPosition + 1], array[high] = array[high], array[indexPosition + 1]
+    array[index + 1], array[high] = array[high], array[index + 1]
 
-    return indexPosition + 1
+    return index + 1
 
 
 def is_anagram(first_string, second_string):
     firsts = list(first_string)
-    seconds= list(second_string)
+    seconds = list(second_string)
 
     firstsSorted = quicksort(firsts, 0, len(firsts) - 1)
     secondsSorted = quicksort(seconds, 0, len(seconds) - 1)
