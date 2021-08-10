@@ -12,7 +12,7 @@ def quicksort(array, low, high):
 
 
 def partition(array, low, high):
-    indexPosition = low - 1
+    index = low - 1
     pivot = array[high]
 
     for j in range(low, high):
