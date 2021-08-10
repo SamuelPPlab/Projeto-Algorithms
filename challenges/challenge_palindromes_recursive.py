@@ -1,5 +1,5 @@
 def is_palindrome_recursive(word, low_index, high_index):
-    """ Faça o código aqui. """
+    """ Faça o código aqui """
     li = low_index
     hi = high_index
     try:
