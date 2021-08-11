@@ -7,5 +7,5 @@ def find_duplicate(nums):
         storage = (num, nums.count(num))
         if storage[1] > 1:
             repeated_num = num
-            return repeated_num
+            break
     return repeated_num
