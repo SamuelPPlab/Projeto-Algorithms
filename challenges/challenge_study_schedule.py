@@ -15,6 +15,3 @@ def study_schedule(permanence_period, target_time):
     if invalid_entrance:
         output = None
     return output
-
-
-study_schedule([("0", 4), (1, 4), (2, 5)], 3)
