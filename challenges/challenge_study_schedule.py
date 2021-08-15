@@ -11,4 +11,3 @@ def study_schedule(permanence_period, target_time):
             frequency += 1
 
     return frequency
-    
