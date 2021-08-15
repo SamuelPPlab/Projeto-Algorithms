@@ -6,5 +6,5 @@ def find_duplicate(numbers):
     for number in numbers:
         if type(number) != int or number < 0:
             return False
-    count = max(numbers, key=numbers.count)
-    return count
+    num = max(numbers, key=numbers.count)
+    return False if numbers.count(num) <= 1 else num
