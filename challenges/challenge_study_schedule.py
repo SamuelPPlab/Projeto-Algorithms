@@ -4,7 +4,7 @@ def study_schedule(permanence_period, target_time):
         return None
 
     number = 0
-    
+
     for schedule in permanence_period:
         schedule_ok = target_time in schedule
         if None in schedule:
