@@ -1,5 +1,3 @@
-def find_duplicate(nums):
-    """ Faça o código aqui. """
 def duplicate(nums):
     nums.sort()
     for index in range(1, len(nums)):
