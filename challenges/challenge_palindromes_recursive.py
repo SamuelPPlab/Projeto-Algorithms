@@ -1,7 +1,14 @@
 def is_palindrome_recursive(word, low_index, high_index):
     """ Faça o código aqui. """
-    print(word)
-    if len(word) == 1:
-        return word
-    else:
-        return f'{word[-1]}' + is_palindrome_recursive(word[:-1], 0, 0)
+    print(low_index)
+    try:
+        if len(word) == 1 or low_index == high_index:
+            return True
+        elif word == '':
+            return False
+        elif word[low_index] != word[high_index]:
+            return False
+        else:
+            return is_palindrome_recursive(word, low_index +1, high_index -1)
+    except IndexError:
+        return False

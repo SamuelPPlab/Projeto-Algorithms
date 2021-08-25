@@ -7,4 +7,3 @@ def is_palindrome_iterative(word):
     if word == '' or word_salad != reversed_order:
         return False
     return True
-
