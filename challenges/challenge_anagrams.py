@@ -4,7 +4,7 @@ def is_anagram(first_string, second_string):
 
     return first_result == second_result
 
-
+# linha 14 creditada Lucas Magnun (selection sort)
 def selection_sort(string):
     for i in range(len(string)):
         minimum = i
